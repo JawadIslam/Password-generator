@@ -41,21 +41,21 @@ export default function App() {
 
   return (
 
-    <div className="flex  select-none flex-col justify-center h-lvh  items-center font-poppins">
+    <div className="flex  select-none flex-col justify-center md:h-lvh h-50vh  items-center font-poppins">
 
-      <div className=" flex border-solid justify-center   items-center flex-col border-[1px] rounded-md border-gray-300 w-3/6 h-[90vh] px-0 py-0 shadow-md bg-[#fafaf9]">
-       <img className="w-[90px] h-[110px] " src={lock} alt="" />
-        <div className="text-2xl font-bold my-2 font-poppins text-sky-500">
+      <div className=" flex border-solid justify-center   items-center flex-col border-[1px] md:m-0 m-4 rounded-md border-gray-300 md:w-[100vh] w-[45vh]  md:h-[90vh] h-[70vh] px-0 py-0 shadow-md bg-[#fafaf9]">
+       <img className="w-[90px] h-[110px] mb-4 md:mt-0" src={lock} alt="" />
+        <div className="text-2xl font-bold my-2 font-poppins mb-4 md:mb-0 text-sky-500">
           Password Generator
         </div>
 
-       <div className="flex">
+       <div className="flex mb-4 md:mb-0">
           <input
             type="text"
             value={password}
-            className="mt-1 block w-[30vw] px-3 py-2 bg-white border border-slate-300 rounded-l-lg text-xl shadow-sm placeholder-slate-400
-      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
-     focus:invalid:ring-pink-500 
+            className="mt-1 block md:w-[30vw] w-[60vw] px-3 py-2 bg-white border border-slate-300 rounded-l-lg text-xl shadow-sm placeholder-slate-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 
+   
     "
       ref={passwordRef}
       
@@ -72,9 +72,9 @@ export default function App() {
               setLength(e.target.value);
               
             }}
-            className="w-[340px] h-2 my-4  bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-sky-700"
+            className=" w-[300px] md:w-[340px] h-2 my-4  bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-sky-700"
           />
-          <lebel className="text-gray-600">Length:{length}</lebel>
+          <lebel className="text-gray-600 m-4 md:m-0">Length:{length}</lebel>
         
 
         
@@ -112,7 +112,7 @@ export default function App() {
           <label htmlFor="numberInput" className="text-neutral-500 p-2">Numbers</label>
           </div>
           </div>
-          <h1 className="text-gray-400 mt-2 text-[0.4rem]">Devloped by Jawad</h1>
+          <h1 className="text-gray-400  md:text-[0.6rem] mt-8 md:mt-0 text-[0.7rem] ">Devloped by Jawad</h1>
 </div>
 
           </div>
